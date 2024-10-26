@@ -9,7 +9,7 @@ import Profile from "./Components/Profile";
 
 function App() {
   return (
-    <ProviderTheme>
+    <ProviderTheme >
       <Router>
         <Routes>
         <Route element={<ProtectedRoutes/>}/>
@@ -18,8 +18,7 @@ function App() {
         <Route/>
         <Route  path="/signup" element={<SingUpPage/>}/>
         <Route path="/login" element={<LoginPage/>}/>
-      </Routes>
-
+        </Routes>
       </Router>
     </ProviderTheme>
   );
