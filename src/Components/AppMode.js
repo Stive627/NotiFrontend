@@ -1,7 +1,9 @@
 import React from 'react'
 import { UseTheme } from '../useHook/useContextTheme'
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
 
-function App_mode() {
+function AppMode() {
     const {theme, onchange } = UseTheme()
   return (
     <>
@@ -10,10 +12,10 @@ function App_mode() {
             <div className=' w-16 h-7 p-1'>
                 <div className={`flex justify-between`}>
                     <div className={`w-6 h-6 rounded-full`}>
-                        <img className={`object-cover ${theme === 'light' && 'opacity-45'}`} src={()=>require('../Images/moon.png')}/>
+                        <DarkModeIcon className={`object-cover ${theme === 'light' && 'opacity-45'}`}/>
                     </div>
                     <div className={`w-6 h-6 rounded-full ${theme === 'dark' && ' opacity-45'}`}>
-                        <img className={`object-cover`} src={()=>require('../Images/sun.jpg')}/>
+                        <LightModeIcon className={`object-cover text-yellow-300 ${theme === 'light' && 'opacity-45'}`}/>
                     </div>
                 </div>
             </div>
@@ -22,4 +24,4 @@ function App_mode() {
   )
 }
 
-export default App_mode
+export default AppMode

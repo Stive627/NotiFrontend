@@ -1,5 +1,5 @@
 import React from 'react'
-import App_mode from './App_mode'
+import AppMode from './AppMode'
 import LogoutIcon from '@mui/icons-material/Logout';
 import DeleteIcon from '@mui/icons-material/Delete';
 
@@ -7,7 +7,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 function Toggle() {
   const datas =[
     {
-      'name':'Theme', 'content':<App_mode/>
+      'name':'Theme', 'content':<AppMode/>
     },
     {
       'name':'Logout', 'content':<LogoutIcon/>
